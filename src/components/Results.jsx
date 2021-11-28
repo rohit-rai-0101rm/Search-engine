@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const navbar = () => {
+export const Results = () => {
     return (
         <div>
-            
+            Results
         </div>
     )
 }

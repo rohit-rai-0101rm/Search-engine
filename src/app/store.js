@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
-
+import { searchApi } from '../service/searchApi';
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    [searchApi.reducerPath]: searchApi.reducer,
+
+
   },
 });
